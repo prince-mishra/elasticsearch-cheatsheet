@@ -18,7 +18,7 @@ If you´re on elasticsearch 2.x like me, the [4.x docs of curator](https://www.e
 
 You can copy the contents from here - you only need to change the `unit_count: 14` to the quantity of days you don´t want to delete.
 
-[curator-configfile.yml](https://github.com/jonashackt/elasticsearch-cheatsheet/blob/master/curator-configfile.yml):
+[curator-configfile.yml](https://github.com/prince-mishra/elasticsearch-cheatsheet/blob/master/curator-configfile.yml):
 
 ```
 ---
@@ -42,7 +42,7 @@ logging:
 
 #### Create a curator-actionfile.yml (or download from here)
 
-[curator-actionfile.yml](https://github.com/jonashackt/elasticsearch-cheatsheet/blob/master/curator-actionfile.yml):
+[curator-actionfile.yml](https://github.com/prince-mishra/elasticsearch-cheatsheet/blob/master/curator-actionfile.yml):
 
 ```
 ---
@@ -262,7 +262,7 @@ curl -XPUT 'http://localhost:9200/_cluster/settings/' -d '{
 
 
 
-## Upgrade elasticsearch from 1.x to 2.x
+## Upgrade elasticsearch from 1.x to 2.x (or ay generic cluster rolling upgrade)
 
 
 Only start the upgrade-process, if status is green! check with:
