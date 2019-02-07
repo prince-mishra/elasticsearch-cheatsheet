@@ -258,7 +258,20 @@ curl -XPUT 'http://localhost:9200/_cluster/settings/' -d '{
 }'
 ```
 
+#### close indices
+```
+ curl -XPOST localhost:9200/my_index-*/_close
+```
 
+#### open closed indices
+```
+ curl -XPOST localhost:9200/my_index-*/_open
+```
+
+#### delete indices
+```
+ curl -XDELETE localhost:9200/my_index-*
+```
 
 
 
